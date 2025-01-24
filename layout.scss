@@ -1,0 +1,24 @@
+
+body {
+    background-color: $bg-color;
+        li {
+        list-style: none;
+        }
+}
+
+.container {
+    max-width: $largura-container;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    @include cabecalho ($bg-color2);
+        
+        .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $espaco-cabecalho;
+    }
+}
